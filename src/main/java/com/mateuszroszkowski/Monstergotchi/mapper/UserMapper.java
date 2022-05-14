@@ -4,7 +4,9 @@ import com.mateuszroszkowski.Monstergotchi.dto.MonsterDto;
 import com.mateuszroszkowski.Monstergotchi.dto.UserDto;
 import com.mateuszroszkowski.Monstergotchi.model.Monster;
 import com.mateuszroszkowski.Monstergotchi.model.User;
+import org.springframework.stereotype.Component;
 
+@Component
 public class UserMapper {
     public User map(UserDto userDto) {
         return User.builder()

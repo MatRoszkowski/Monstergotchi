@@ -2,7 +2,9 @@ package com.mateuszroszkowski.Monstergotchi.mapper;
 
 import com.mateuszroszkowski.Monstergotchi.dto.MonsterDto;
 import com.mateuszroszkowski.Monstergotchi.model.Monster;
+import org.springframework.stereotype.Component;
 
+@Component
 public class MonsterMapper {
     public Monster map(MonsterDto monsterDto) {
         return Monster.builder()
